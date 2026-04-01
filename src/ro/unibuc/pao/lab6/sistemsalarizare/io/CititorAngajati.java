@@ -1,4 +1,10 @@
-package ro.unibuc.pao.lab6.sistemsalarizare;
+package ro.unibuc.pao.lab6.sistemsalarizare.io;
+
+import ro.unibuc.pao.lab6.sistemsalarizare.model.Angajat;
+import ro.unibuc.pao.lab6.sistemsalarizare.model.Companie;
+import ro.unibuc.pao.lab6.sistemsalarizare.model.DateContract;
+import ro.unibuc.pao.lab6.sistemsalarizare.model.Departament;
+import ro.unibuc.pao.lab6.sistemsalarizare.model.tipuri.Inginer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -50,9 +56,6 @@ public class CititorAngajati {
             }
 
             companie.addAngajat(angajat);
-
-
-
         }
 
         in.close();

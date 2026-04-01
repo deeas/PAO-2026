@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab6.sistemsalarizare;
+package ro.unibuc.pao.lab6.sistemsalarizare.model;
 
 import java.time.LocalDate;
 

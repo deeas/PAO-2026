@@ -1,4 +1,6 @@
-package ro.unibuc.pao.lab6.sistemsalarizare;
+package ro.unibuc.pao.lab6.sistemsalarizare.model;
+
+import ro.unibuc.pao.lab6.sistemsalarizare.model.Angajat;
 
 import java.util.ArrayList;
 import java.util.Collections;

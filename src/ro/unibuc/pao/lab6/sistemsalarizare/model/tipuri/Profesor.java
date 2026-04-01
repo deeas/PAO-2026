@@ -1,4 +1,8 @@
-package ro.unibuc.pao.lab6.sistemsalarizare;
+package ro.unibuc.pao.lab6.sistemsalarizare.model.tipuri;
+
+import ro.unibuc.pao.lab6.sistemsalarizare.model.Angajat;
+import ro.unibuc.pao.lab6.sistemsalarizare.model.DateContract;
+import ro.unibuc.pao.lab6.sistemsalarizare.model.Departament;
 
 public class Profesor extends Angajat {
     private final double coeficientDidactic;
