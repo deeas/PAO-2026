@@ -1,0 +1,7 @@
+6
+INGINER;A001;Popescu Ana;35;Platform;7000;Java
+PROFESOR;A002;Ionescu Mihai;48;CS;6500;1.15
+ECONOMIST;A003;Georgescu Elena;41;Finance;5800;4
+PAZNIC;A004;Marin Dan;39;Security;3200;0.25
+INGINER;A005;Stoica Radu;29;Platform;6100;DevOps
+PROFESOR;A006;Tudor Maria;52;Math;7200;1.25
