@@ -5,6 +5,9 @@ import ro.unibuc.pao.lab6.sistemsalarizare.model.Companie;
 import ro.unibuc.pao.lab6.sistemsalarizare.model.DateContract;
 import ro.unibuc.pao.lab6.sistemsalarizare.model.Departament;
 import ro.unibuc.pao.lab6.sistemsalarizare.model.tipuri.Inginer;
+import ro.unibuc.pao.lab6.sistemsalarizare.model.tipuri.Paznic;
+import ro.unibuc.pao.lab6.sistemsalarizare.model.tipuri.Profesor;
+import ro.unibuc.pao.lab6.sistemsalarizare.model.tipuri.Economist;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -46,12 +49,24 @@ public class CititorAngajati {
             Departament departament = new Departament(numeDepartament);
             DateContract contract = new DateContract(LocalDate.now(), "NEDERMINAT");
 
-
             switch (tip) {
-                case "INGINER" -> {
-                    angajat = new Inginer(cod, nume, varsta, salariuBaza, departament,
+                case "INGINER" -> angajat = new Inginer(cod, nume, varsta, salariuBaza, departament,
                             contract, param );
+                case "PROFESOR" -> {
+                    double coef = Double.parseDouble(param);
+                    angajat = new Profesor(cod, nume, varsta, salariuBaza, departament, contract, coef);
                 }
+
+                case "ECONOMIST" -> {
+                    int treapta = Integer.parseInt(param);
+                    angajat = new Economist(cod, nume, varsta, salariuBaza, departament, contract, treapta);
+                }
+
+                case "PAZNIC" -> {
+                    double spor = Double.parseDouble(param);
+                    angajat = new Paznic(cod, nume, varsta, salariuBaza, departament, contract, spor);
+                }
+
                 default -> throw new IllegalStateException("Tip necunoscut: " + tip);
             }
 
