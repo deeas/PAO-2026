@@ -1,0 +1,9 @@
+Ana Popescu,MI21,9.50
+Mihai Ionescu,MI22,4.80
+Ioana Marin,MI21,7.30
+George Stan,MI23,10.00
+Elena Dobre,MI22,8.40
+Radu Pavel,MI21,3.90
+Invalid Student,MI22,abc
+No Grade,MI21
+Maria Georgescu,MI23,9.20
